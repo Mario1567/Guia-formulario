@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Empresa</title>
+    <!-- Enlazamos el archivo CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Formulario de Empresa</h2>
+        <form id="empresaForm" action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+            <div id="errorNombre" class="error"></div>
+
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" required>
+            <div id="errorDni" class="error"></div>
+
+            <label for="telefono">Teléfono:</label>
+            <input type="tel" id="telefono" name="telefono" required>
+            <div id="errorTelefono" class="error"></div>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+            <div id="errorMensaje" class="error"></div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <!-- Enlazamos el archivo JS -->
+    <script src="script.js"></script>
+</body>
+</html>
